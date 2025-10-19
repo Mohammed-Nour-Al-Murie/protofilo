@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Me</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+    
+     body{
+     background-color: black;
+             color:green;
+             font-family: "Share Tech Mono";
+     }
+    .email {
+    text-align: center;      
+    margin-top: 20px;    
+    font-size: 20px;   
+}
+
+.email h4 {
+    margin: 0 0 5px 0;       
+  padding-bottom: 7px;
+}
+
+.email p {
+    margin: 0;               
+}
+
+.email a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ff00;
+    transition: text-shadow 0.3s, color 0.3s;
+    padding-bottom: 7px;
+
+}
+
+.email a:hover {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    color: lightgreen;
+}
+</style>
+<script>
+function validateForm() {
+  var name = document.getElementById("fullname").value;
+  var email = document.getElementById("email").value;
+  var country = document.getElementById("country").value;
+  var comments = document.getElementById("comments").value;
+
+  if (name == "" || email == "" || country == "" || comments == "") {
+    alert("Please fill in all fields before submitting.");
+    return false;
+  } else {
+    alert("Form submitted successfully!");
+    return true;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2>Contact Me</h2>
+
+<form onsubmit="return validateForm()">
+  <label for="fullname">Full Name:</label><br>
+  <input type="text" id="fullname" name="fullname"><br><br>
+
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="country">Country:</label><br>
+  <input type="text" id="country" name="country"><br><br>
+
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+ <p><a id="rr"href="mailto:mhalmurie23@cit.just.edu.jo">Send email</a></p>
+  <p><a href="tel:0782116502">Send message or call</a></p>
+</body>
+</html>

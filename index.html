@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: black;
+             color:green;
+             font-family: "Share Tech Mono";
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+}
+        .me{
+            text-align: center;
+        }
+        .me h3{
+               text-decoration: none;
+        }
+        h3{
+             text-decoration: underline;
+             font-style: bold;
+        }
+       
+.edu, .cert, .CTFs , .skills ,.lang{
+    font-size: 18px;
+    display: block;            
+    width: 400px;             
+    margin: 20px auto;         
+    padding: 20px;
+    border: 2px solid #00ff00;
+    border-radius: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.edu:hover, .cert:hover, .CTFs:hover , .skills:hover , .lang:hover{
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; /
+}
+         #gh{
+              font-size: 20px;
+              color:white;
+              padding-left:2%;
+              transition: text-shadow 0.3s, color 0.3s; 
+         }
+        #gh:hover{
+              color:white;
+                  color: lightblue;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #0091f8, 0 0 20px #00ff00; 
+              
+        }
+        #ln{
+             padding-left:45%;
+            
+                           color:lightblue;
+                 font-size: 20px;
+transition: text-shadow 0.3s, color 0.3s; 
+
+        }
+        #ln:hover{
+            color: lightblue;
+    text-shadow: 0 0 5px #0091f8, 0 0 10px #0091f8, 0 0 20px #00ff00; 
+        }
+.glow-hr {
+    border: none;               
+    height: 3px;               
+    background: rgb(137, 212, 147);         
+    width: 80%;                 
+    margin: 20px auto;          
+    border-radius: 5px;         
+    box-shadow: 0 0 10pxrgb(137, 212, 147), 0 0 20px rgb(137, 212, 147);
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5pxrgb(137, 212, 147), 0 0 10px rgb(137, 212, 147);
+    }
+    50% {
+        box-shadow: 0 0 15px rgb(137, 212, 147), 0 0 30px rgb(137, 212, 147);
+    }
+    100% {
+        box-shadow: 0 0 5pxrgb(137, 212, 147), 0 0 10px rgb(137, 212, 147);
+    }
+}
+.email {
+    text-align: center;      
+    margin-top: 20px;    
+    font-size: 20px;   
+}
+
+.email h4 {
+    margin: 0 0 5px 0;       
+  padding-bottom: 7px;
+}
+
+.email p {
+    margin: 0;               
+}
+
+.email a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ff00;
+    transition: text-shadow 0.3s, color 0.3s;
+    padding-bottom: 7px;
+
+}
+
+.email a:hover {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    color: lightgreen;
+}
+#soc{
+   text-align: center;      
+    margin-top: 20px;    
+    font-size: 20px; 
+    margin: 0 0 5px 0;       
+  padding-bottom: 7px;
+}
+#pp{
+    margin-bottom:20px;
+}
+#mm {
+    position: absolute; 
+    top: 10px;           
+    left: 20px;        
+    width: 180px;        
+    height: auto;        
+    z-index: 1000;       
+}
+    </style>
+    <script>
+    var username = "admin";
+    var password = "admin";
+    const userName = prompt("Please enter your name ( hint : admin) : ");
+    const PassWord = prompt("Please enter The password ( hint : admin) : ");
+     if (userName === username && PassWord === password) {
+    alert("Welcome!");
+  } else {
+    window.location.href = "Untitled-2.html";
+  }
+
+
+    </script>
+    <title>Mohammed Nour Al Murie Protofilo 167910 </title>
+</head>
+<body> 
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEps-i2xrDaYg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731847676191?e=1762387200&v=beta&t=YHu30ZylOiLDjLUjre8nPnlaVTSF7XczXZYIQCp0rmA" alt="Pro Image" id="mm">
+
+    <div class="me">
+    <h2>Mohammed Nour Al Murie</h2>
+    <h2>Cyber Security Student</h2>
+    <h2>Third Year</h2>
+    <h3>Web Security</h3>
+    </div>
+    <hr class="glow-hr">
+    <div class="edu">
+          <h3>Education:</h3>
+          <p>Jordan University Of Science And Technology    (2023--present)</p>
+          <p>Cyber Security</p>
+    </div>
+    <div class="cert">
+        <h3>Certification:</h3>
+        <p>Immersive Labs SOC Certificate</p>
+        <p>Malware analysis fundamental and Advanced </p>
+        <p>Basic Digital Forensics</p>
+    </div>
+    <div class="CTFs">
+        <h3>CTFs:</h3>
+        <p>NCSCJO 2025 placed 8th</p> 
+        <p>DACTF placed 17th Internationaly</p>
+    </div>
+    <div class="skills">
+        <h3>Soft Skills:</h3>
+        <p>Problem Solving</p>
+        <p>Good Comuncation</p>
+    </div>
+    <div class="lang">
+        <h3>My faviorute programming lang:</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Assembly_(programming)">Assembly</a></p>
+        <p><a href="https://www.w3schools.com/cpp/">C/C++</a></p>
+        <p><a href="https://www.w3schools.com/python/">Pythonnn</a></p>
+        <p><a href="https://www.w3schools.com/html/html_scripts.asp">JS/HTML/CSS</a></p>
+    </div>
+    <div class="lang" id="pp">
+        <h3>Where you see your self after 4 years</h3>
+        <p>In soc Layer 3 or 2 in a company in kuwait or syria</p>
+    </div>
+    <h4 id="soc">My Social media : </h4>
+    <a id="ln"href="https://www.linkedin.com/in/mohammed-nour-al-murie-1792a32b6/">Linkedin</a>
+    <a id="gh"href="https://github.com/0xm7mad">GitHub</a>
+    <div  class="email">
+    <h4 ><a href="Contact.html">Contact me</a> </h4>
+    </div>
+</body>
+
+
+
+
